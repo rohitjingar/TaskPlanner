@@ -1,0 +1,17 @@
+/* EditAndDeleteTaskSuccess.css */
+
+.notification {
+    position: fixed;
+    top: 20px; /* Adjust top position as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #4caf50;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 9999; /* Ensure it appears above other content */
+    transition: opacity 0.3s ease;
+    opacity: 1;
+  }
+  

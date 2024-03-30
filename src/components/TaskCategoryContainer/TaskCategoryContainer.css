@@ -1,0 +1,102 @@
+.task-category-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow-y: auto; /* Added overflow property to enable scrolling */
+    padding: 20px; /* Add padding to create space for the close icon */
+    box-sizing: border-box; /* Include padding in the width and height */
+}
+
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    
+    margin-bottom: 20px;
+  }
+  .filter-options {
+    margin-right: 20px;
+  }
+  
+  .tasks-container {
+    width: 100%;
+  }
+.category-header {
+  font-size: 1.5rem;
+  font-weight:600;
+  margin-bottom: 10px;
+  padding: 10px;
+  color: #f8f9fa;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:space-evenly;
+}
+.card-container1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .task-category-container {
+      border-radius: 0;
+    }
+  }
+  
+  @media screen and (max-width: 576px) {
+    .header {
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+  
+    .filter-options {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  }
+ 
+  .close-icon {
+    position: absolute; /* Change relative to absolute */
+    top: 10px; /* Adjust top position as needed */
+    right: 10px; /* Adjust right position as needed */
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    
+  }
+  .close-icon:hover {
+    background-color: red; /* Change background color on hover */
+}
+  .close-icon:before, .close-icon:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 25px;
+    height: 2px;
+    background-color: #333; /* Color of the cross */
+    transform: translate(-50%, -50%);
+  }
+  
+  .close-icon:before {
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+  
+  .close-icon:after {
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
