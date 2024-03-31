@@ -37,28 +37,28 @@ const EditTaskForm = ({ task, onSubmit, onCancel }) => {
         <form onSubmit={handleSubmit} className="form">
           <h2>Edit Task</h2>
           <div className="form-group">
-            <label>Title:</label>
+            <label>Title</label>
             <input className='read-only' type="text" name="title" value={editedTask.title} readOnly />
           </div>
 
           <div className="form-group">
-            <label>Description:</label>
+            <label>Description</label>
             <textarea className='read-only' name="description" value={editedTask.description} readOnly></textarea>
           </div>
 
           <div className="form-group">
-            <label>Team:</label>
+            <label>Team</label>
             <input className='read-only' type="text" name="team" value={editedTask.team} readOnly />
           </div>
 
           <div className="form-group">
-            <label>Assignee:</label>
+            <label>Assignee</label>
             <input className='read-only' type="text" name="assignee" value={editedTask.assignee} readOnly />
           </div>
 
           <div className="form-group">
-            <label>Priority:</label>
-            <select name="priority" value={editedTask.priority} onChange={handleChange}>
+            <label>Priority</label>
+            <select className='not-read-only'  name="priority" value={editedTask.priority} onChange={handleChange}>
               <option value="P0">P0</option>
               <option value="P1">P1</option>
               <option value="P2">P2</option>
@@ -66,8 +66,8 @@ const EditTaskForm = ({ task, onSubmit, onCancel }) => {
           </div>
 
           <div className="form-group">
-            <label>Status:</label>
-            <select name="status" value={editedTask.status} onChange={handleChange}>
+            <label>Status</label>
+            <select className='not-read-only' name="status" value={editedTask.status} onChange={handleChange}>
               <option value="Pending">Pending</option>
               <option value="In Progress">In Progress</option>
               <option value="Completed">Completed</option>

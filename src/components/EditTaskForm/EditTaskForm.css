@@ -11,7 +11,10 @@
   overflow-y: auto; /* Added overflow property to enable scrolling */
 }
 .read-only{
-  background-color: #f5f3f3;
+  background-color: #ececec;
+}
+.not-read-only{
+    background-color: #feffff;
 }
 .edit-task-form {
   position: fixed;
