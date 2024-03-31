@@ -122,11 +122,11 @@ function TaskCategoryContainer({ title, tasks, onClose }) {
         <div className='close-icon' onClick={()=>onClose(title)}></div>
         <div className='header'>
           <div className='filter-options'>
-            <label>Filter by Assignee:</label>
+            <label>Filter by Assignee</label>
             <input type="text" value={filterAssignee} onChange={(e) => setFilterAssignee(e.target.value)} />
           </div>
           <div className='filter-options'>
-            <label>Filter by Priority:</label>
+            <label>Filter by Priority</label>
             <select value={filterPriority} onChange={(e) => setFilterPriority(e.target.value)}>
               <option value="">All</option>
               <option value="P0">P0</option>
@@ -135,15 +135,15 @@ function TaskCategoryContainer({ title, tasks, onClose }) {
             </select>
           </div>
           <div className='filter-options'>
-            <label>Start Date:</label>
+            <label>Start Date</label>
             <input type="date" value={startDate} onChange={(e) => setStartDate(e.target.value)} />
           </div>
           <div className='filter-options'>
-            <label>End Date:</label>
+            <label>End Date</label>
             <input type="date" value={endDate} onChange={(e) => setEndDate(e.target.value)} />
           </div>
           <div className='filter-options'>
-            <label>Sort by:</label>
+            <label>Sort by</label>
             <select value={sortBy} onChange={(e) => setSortBy(e.target.value)}>
               <option value="priority">Priority</option>
               <option value="startDate">Start Date</option>

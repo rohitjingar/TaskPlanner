@@ -13,13 +13,14 @@
 }
 
 .header {
-    display: flex;
-    flex-wrap: wrap;
-    
-    margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+
   }
   .filter-options {
     margin-right: 20px;
+    margin-bottom: 10px; /* Increase bottom margin */
   }
   
   .tasks-container {
@@ -37,7 +38,17 @@
   align-items: center;
   justify-content: center;
 }
-
+.filter-options input[type="text"],
+  .filter-options select,
+  .filter-options input[type="date"] {
+    width: 100%;
+    font-size: 13px;
+     /* Increase font size for better visibility */
+    border: 1px solid #ccc; /* Add border */
+    padding: 8px; /* Add padding for better spacing */
+    border-radius: 5px; /* Add border-radius for better appearance */
+    box-sizing: border-box; /* Include padding and border in the width */
+  }
 .card-container {
     width: 100%;
     display: flex;
@@ -51,13 +62,9 @@
     align-items: center;
 }
 /* Responsive Styles */
-@media screen and (max-width: 768px) {
-    .task-category-container {
-      border-radius: 0;
-    }
-  }
+
   
-  @media screen and (max-width: 576px) {
+  @media screen and (max-width: 768px) {
     .header {
       justify-content: center;
       align-items: center;
@@ -67,9 +74,22 @@
     .filter-options {
       margin-right: 0;
       margin-bottom: 10px;
+      width: 100%; /* Make input fields occupy full width */
     }
+    .filter-options input[type="text"],
+  .filter-options select,
+  .filter-options input[type="date"] {
+    width: 100%;
+    font-size: 16px; /* Increase font size for better visibility */
   }
- 
+  .task-category-container {
+    border-radius: 0;
+  }
+  }
+  .header label{
+     font-size: 1rem;
+  }
+  
   .close-icon {
     position: absolute; /* Change relative to absolute */
     top: 10px; /* Adjust top position as needed */
