@@ -32,6 +32,7 @@
 }
   
   .edit-task-form h2 {
+    font-size: 1.3rem;
     margin-bottom: 20px;
   }
   
@@ -52,7 +53,12 @@
     border-radius: 5px;
     border: 1px solid #ccc;
   }
-  
+  .form label {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    display: block;
+  }
   .buttons {
     display: flex;
     justify-content: space-between;

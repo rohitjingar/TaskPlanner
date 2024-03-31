@@ -28,11 +28,11 @@ function CreateTaskForm({ onSubmit, onCancel }) {
     <div className='create-container'>
       <form className="task-form" onSubmit={handleSubmit}>
         {/* Title input field */}
-        <label>Title:</label>
+        <label>Title</label>
         <input type="text" value={title} onChange={(e) => setTitle(e.target.value)} required />
 
         {/* Description input field */}
-        <label>Description:</label>
+        <label>Description</label>
         <div className="description-container">
           <textarea
             value={description}
@@ -42,15 +42,15 @@ function CreateTaskForm({ onSubmit, onCancel }) {
         </div>
 
         {/* Team input field */}
-        <label>Team:</label>
+        <label>Team</label>
         <input type="text" value={team} onChange={(e) => setTeam(e.target.value)} />
 
         {/* Assignee input field */}
-        <label>Assignee:</label>
+        <label>Assignee</label>
         <input type="text" value={assignee} onChange={(e) => setAssignee(e.target.value)} />
 
         {/* Priority dropdown */}
-        <label>Priority:</label>
+        <label>Priority</label>
         <select value={priority} onChange={(e) => setPriority(e.target.value)} required>
           <option value="">Select Priority</option>
           <option value="P0">P0</option>
