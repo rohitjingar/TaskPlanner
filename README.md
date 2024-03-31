@@ -24,10 +24,9 @@ The Task Management System is a web application designed to help users manage th
 2. Navigate to the project directory.
 3. Install dependencies by running `npm install`.
 4. Start the development server by running `npm start`.
-5. Access the application in your web browser at `http://localhost:3000`.
 
 ## Deployment
-This project is deployed using Vercel. You can access the live version of the application [here](#).
+This project is deployed using Vercel. You can access the live version of the application [here](https://taskplanner-ntny4v8eh-rohitjingar.vercel.app/).
 
 ## Credits
 This project was created by Rohit Kumar Jingar.
